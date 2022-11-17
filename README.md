@@ -10,10 +10,10 @@ Danslamer is a fully responsive travel agency bootstrap template based on the mo
 <h3>  Version Details : </h3>
 <ul>
  	<li> <b> Version 1.0.1 (2022-08-3) </b> <br>
--Gallery section image title fixed
--Breadcrumbs fixed
--Title animation added
--404 Font weight changed
+- Gallery section image title fixed<br>
+- Breadcrumbs fixed<br>
+- Title animation added<br>
+- 404 Font weight changed<br>
 
 
 </li>
