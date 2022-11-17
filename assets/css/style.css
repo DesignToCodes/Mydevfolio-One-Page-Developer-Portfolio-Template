@@ -1,0 +1,764 @@
+/* 
+  ======================== ***** ============================= 
+    Template Name: Mydevfolio - One Page Portfolio Template
+	  Template URI: https://www.designtocodes.com/product/mydevfolio-one-page-portfolio-template/
+	  Description: Mydevfolio is a One Page Bootstrap template built with a modern design and the latest web technologies.
+	  Version: 1.0.1
+	  Author: DesignToCodes
+	  Author URI: https://www.designtocodes.com
+	  Text Domain: mydevfolio
+*/
+
+:root {
+
+  /* Global Color */
+  --primary_color: #674CAE;
+  --primary_shade: rgba(225, 219, 239, 0.8);;
+  --secondary_color: #454545;
+  --paragraph_color: #666666;
+  --default_color_one: #FFFFFF;
+  --default_color_shade: rgba(240, 237, 247, 0.3);
+  --gradient_color:linear-gradient(180deg, rgba(103, 76, 174, 0) 0%, #674CAE 100%);
+  --border_radius: 3px;
+  --box_shadow: 0px 0px 15px rgba(0, 0, 0, 0.07);
+
+  /* global google font */
+  --primary_font: 'Inter', sans-serif;
+ 
+}
+
+/*Typography
+-----------------------*/
+p{
+  font-family: var(--primary_font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--paragraph_color);
+  margin-bottom: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: var(--primary_color);
+  font-family: var(--primary_font);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+h1 {
+  font-size: 3.375rem;
+}
+h2 {
+  font-size: 2.625rem;
+}
+h3 {
+  font-size: 1.85rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.313rem;
+}
+h6{
+  font-size: 1.125rem;
+}
+
+
+/*Custom Style
+-----------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+}
+::selection {
+  background: var(--primary_color);
+  color: var(--default_color_one);
+}
+[class *="col-"]{
+  padding: 10px;
+}
+#scrollToTopBtn{
+  display: none;
+}
+a,
+button,
+select,
+input,
+label {
+  cursor: pointer;
+  transition: 0.4s all;
+}
+a:focus,
+button:focus,
+select:focus,
+input:focus,
+label:focus {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--primary_color);
+  font-family: var(--primary_font);
+  color: var(--paragraph_color);
+  font-weight: 400;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--primary_color);
+}
+img {
+  border-radius: var(--border_radius);
+}
+section {
+  padding: 100px 0px;
+  overflow: hidden;
+}
+/* button */
+.d2c_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--default_color_one);
+  background-color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+  border-radius: var(--border_radius);
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 8px 30px 8px;
+  font-family: var(--primary_font);
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s all;
+}
+.d2c_btn:hover {
+  background-color: var(--default_color_one);
+  color: var(--primary_color);
+  transition: 0.4s all;
+}
+.d2c_btn:focus {
+  outline: 0;
+  box-shadow: none;
+  background-color: var(--default_color_one);
+  color: var(--primary_color);
+  transition: 0.4s all;
+}
+.d2c_btn:active {
+  box-shadow: none;
+}
+
+
+/* Title */
+.d2c_title{
+  font-weight: 400;
+  color: var(--secondary_color);
+}
+.d2c_title span{
+  font-weight: 800;
+  color: var(--primary_color);
+}
+
+.d2c_title_invert{
+  position: relative;
+  margin-bottom: 5px; 
+}
+.d2c_title_invert h3{
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 25px;
+  text-transform: uppercase;
+}
+.d2c_title_invert span{
+  font-size: 5.70em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(119, 119, 119, 0.15);
+}
+
+/* Background Image */
+.d2c_bg_image {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/*section Image*/
+.d2c_section_img{
+  position: relative;
+}
+.d2c_section_img
+img{
+  position: relative;
+  z-index: 20;
+}
+.d2c_section_img
+.d2c_image_bg_1,
+.d2c_section_img
+.d2c_image_bg_2{
+  width: 250px;
+  height: auto;
+  position: absolute;
+  bottom: -110px;
+  right: -60px;
+  z-index: 10;
+}
+.d2c_section_img
+.d2c_image_bg_2{
+  left: -60px;
+}
+
+/* List Item */
+.list-group .list-group-item{
+  padding: 5px 0px;
+  border: none;
+  font-family: var(--primary_font);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--paragraph_color);
+  background-color: transparent;
+  display: flex;
+}
+.list-group .list-group-item i {
+  margin-right: 10px;
+  color: var(--primary_shade);
+}
+.list-group 
+.list-group-item
+i.d2c_list_icon{
+  width: 16px;
+  height: 16px;
+  background: var(--primary_shade);
+  border-radius: var(--border_radius);
+}
+.list-group .list-group-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* social link */
+.d2c_social_link .d2c_icon{
+  width: 28px;
+  height: 28px;
+  margin-right: 5px;
+  color: var(--primary_color);
+  background: var(--primary_shade);
+  border-radius: var(--border_radius);
+  border: 2px solid transparent;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s all ease;
+}
+.d2c_social_link .d2c_icon:hover{
+  background: var(--primary_color);
+  color: var(--default_color_one);
+  border: 2px solid var(--primary_shade);
+  transition: .4s all ease;
+}
+
+/*Preloader*/
+#preloader {
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+}
+#preloader > img {
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/* form */
+.form-control{
+  font-family: var(--primary_font);
+  color: var(--primary_color);
+  font-weight: 500;
+  background: var(--primary_shade);
+  font-size: 17px;
+  padding: 10px 0px 10px 10px;
+  border: 2px solid transparent;
+  height: auto;
+}
+.form-control::placeholder{
+  color: #00000024;
+  text-transform: capitalize;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: transparent;
+  background: var(--primary_shade);
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  border-color: red;
+}
+
+
+/*Navbar Start*/
+.navbar{
+  background-color: var(--default_color_one);
+  padding: 1rem 1rem;
+}
+.navbar
+.navbar-brand{
+  width: 120px;
+}
+
+.navbar
+.nav-item
+.nav-link{
+  font-family: var(--primary_font);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--paragraph_color) !important;
+  text-transform: capitalize;
+  margin-right: 8px;
+  position: relative;
+}
+.navbar
+.nav-item
+.nav-link:after{
+  content: "";
+  position: absolute;
+  bottom: -0px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary_color);
+  opacity: 0;
+  transition: 0.4s all;
+}
+.navbar
+.nav-item
+.nav-link:is(:hover, :focus){
+  color: var(--primary_color) !important;
+}
+
+.navbar
+.nav-item
+.nav-link:is(:hover, :focus, :active):after{
+  opacity: 1;
+  transition: 0.4s all;
+};
+
+.navbar-nav
+.active>
+.nav-link{
+  color: var(--primary_color) !important;
+}
+.navbar
+.nav-item.active 
+.nav-link:after{
+  opacity: 1;
+}
+
+.navbar
+.navbar-toggler{
+  background-color: var(--primary_shade);
+  color: var(--primary_color);
+}
+
+.navbar
+.d2c_btn{
+  margin-left: 20px;
+}
+/*Navbar End*/
+
+
+
+/*Card*/
+.card.d2c_service_card{
+  background: var(--default_color_one);
+  box-shadow: 0px 0px 27px 4px rgba(103, 76, 174, 0.05);
+  border-radius: var(--border_radius);
+  border: none;
+  border: 2px solid transparent;
+  transition: 0.4s all;
+  height: 100%;
+}
+
+.d2c_service_card
+.card-body{
+  display: flex;
+  flex-direction: column;
+}
+.card.d2c_service_card:hover{
+  border: 2px solid #ddd0ff;
+  transition: 0.4s all;
+}
+
+.d2c_service_card
+svg{
+  fill: var(--default_color_one);
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  box-shadow: -7px 20px 16px rgba(103, 76, 174, 0.2);
+  border-radius: var(--border_radius);
+  background-color: var(--primary_color);
+  margin-bottom: 25px;
+}
+.d2c_service_card
+a{
+  display: inline-block;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 15px;
+  width: fit-content;
+  margin-top: auto;
+}
+.d2c_service_card
+a i{
+  margin-left: 5px;
+}
+
+/*Card*/
+
+
+/*Home Start*/
+.d2c_home{
+  padding: 120px 0px;
+}
+hr.d2c_devider{
+  width: 135px;
+  border: 3px solid var(--primary_shade);
+  margin: 25px 0px;
+}
+.d2c_home
+.d2c_btn{
+  margin-top: 20px;
+}
+/*Home End*/
+
+
+/*Service Start*/
+.d2c_service{
+  background: var(--default_color_shade);
+}
+
+:is(.d2c_service, .d2c_portfolio, .d2c_title_invert, .d2c_skills, .d2c_Testimonial)
+.d2c_title_invert
+h3{
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+/*Service End*/
+
+/*Exprience Start*/
+.d2c_exprience
+.list-group-item.active{
+  color: var(--primary_color);
+}
+.list-group .list-group-item.active i{
+  color: var(--primary_color);
+}
+/*Exprience End*/
+
+/*Counter Start*/
+.d2c_counter{
+  background-color: var(--default_color_shade);
+}
+.d2c_counter
+h6{
+  text-transform: uppercase;
+  color: var(--paragraph_color);
+}
+.d2c_counter
+h2{
+  font-size: 3.4em;
+  font-weight: 400;
+}
+
+.d2c_counter_wrapper{
+  border-right: 1px solid rgba(102, 102, 102, 0.12);
+}
+[class*="col-"]:last-child
+.d2c_counter_wrapper{
+  border-color: transparent;
+}
+/*Counter End*/
+
+/*protfolio start*/
+.card.d2c_protfolio_card{
+  position: relative;
+  border: none;
+  height: 300px;
+  overflow: hidden;
+}
+.d2c_protfolio_card
+.card-img-top{
+  height: 100%;
+  object-fit: cover;
+}
+.d2c_protfolio_card
+.card-body{
+  position: absolute;
+  inset: 0;
+  background: var(--gradient_color);
+  filter: drop-shadow(0px 0px 27px rgba(103, 76, 174, 0.15));
+  border-radius: var(--border_radius);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  bottom: -200%;
+  transition: 0.4s all;
+  cursor: pointer;
+}
+.d2c_protfolio_card:hover
+.card-body{
+  bottom: 0;
+  transition: 0.4s all;
+}
+.d2c_protfolio_card
+.card-body
+h5{
+  color: var(--default_color_one);
+}
+
+.d2c_sponsored{
+  margin-top: 60px;
+}
+.d2c_sponsored
+img{
+  width: 140px;
+  margin: 15px 0px;
+}
+/*protfolio End*/
+
+/*Skill Start*/
+.d2c_skills{
+  background-color: var(--default_color_shade);
+}
+.d2c_skills
+label{
+  font-family: var(--primary_font);
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: capitalize;
+  color: var(--primary_color);
+}
+.d2c_skills
+.progress{
+  background-color: var(--primary_shade);
+}
+.d2c_skills
+.progress-bar{
+  background-color: var(--primary_color);
+}
+/*Skill End*/
+
+/*Testimonial Start*/
+.d2c_testimonial{
+  overflow: hidden;
+}
+.card.d2c_testimonial_card{
+  border: 2px solid var(--primary_shade);
+}
+
+.d2c_testimonial_card 
+.d2c_stars{
+  --percent: calc(var(--rating) / 5 * 100%);
+  display: inline-block;
+  font-size: 24px;
+  font-family: Times;
+  line-height: 1;
+}
+.d2c_testimonial_card 
+.d2c_stars:before{
+  content: '★★★★★';
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, var(--primary_color) var(--percent), var(--paragraph_color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.slick-dots{
+  bottom: -50px !important;
+}
+.slick-dots li button::before {
+  font-size: 12px !important;
+  content: "•" !important;
+  color: var(--paragraph_color);
+  border: 2px solid transparent;
+  border-radius: 50%;
+  line-height: 18px !important;
+}
+.slick-dots li:hover button:before{
+  color: var(--primary_color) !important;
+  transition: 0.4s all;
+}
+.slick-dots li.slick-active button:before{
+  color: var(--primary_color) !important;
+  border-color: var(--primary_color);
+}
+
+/*Testimonial End*/
+
+/*Contact start*/
+.d2c_contact{
+  background-color: var(--default_color_shade);
+}
+.d2c_contact img{
+  object-fit: cover;
+}
+/*Contact end*/
+
+
+
+
+/*Footer Start*/
+.d2c_footer{
+  background-color: var(--primary_color);
+}
+.d2c_main_footer{
+  padding: 50px 0px 20px;
+}
+.d2c_footer *{
+  color: var(--default_color_one);
+}
+.d2c_footer
+.list-group 
+.list-group-item i{
+  color: var(--primary_color);
+  width: 25px;
+  height: 25px;
+  background: var(--primary_shade);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border_radius);
+  font-size: 12px;
+}
+
+.d2c_footer_item
+h5{
+  text-transform: capitalize;
+}
+
+.d2c_footer
+.form-control{
+  padding: 10px 0px 10px 10px;
+  background-color: var(--default_color_shade);
+  color: #000000;
+}
+.d2c_footer
+.form-control::placeholder{
+  color: var(--primary_shade);
+}
+.d2c_footer
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.d2c_footer_item
+.d2c_btn{
+  background-color: var(--default_color_shade);
+  border-radius: 0px 3px 3px 0px;
+  border-color: var(--default_color_one);
+  padding: 4px 15px;
+  font-size: 20px;
+}
+.d2c_footer_item
+.d2c_btn:hover{
+  background-color: var(--primary_color);
+  border-color: var(--primary_shade);
+}
+
+.d2c_footer_item
+img{
+  max-width: 180px;
+}
+.d2c_footer 
+hr{
+  margin: 0;
+  border-top: 1px solid #5D449D;
+}
+.d2c_footer_item
+a{
+  color: var(--default_color_one);
+}
+.d2c_footer_item
+.list-group-item
+a{
+  display: flex;
+}
+/*Sub Footer*/
+.d2c_sub_footer{
+  text-align: center;
+  padding: 20px 0px;
+}
+.d2c_sub_footer p{
+  margin-bottom: 0;
+}
+
+.d2c_sub_footer p a{
+  font-weight: 700;
+  color: var(--default_color_one);
+}
+
+/*Footer End*/
+
+
+#scrollToTopBtn a{
+  text-decoration: none;
+}
+#scrollToTopBtn a i{
+  background: var(--primary_color);
+  border: 2px solid #ffffff;
+  font-size: 20px;
+  color: var(--default_color_one);
+  border-radius: 4px;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 5%;
+  right: 4%;
+  transition: 0.4s all ease;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s all;
+}
+
+#scrollToTopBtn a i:hover{
+  background-color: var(--default_color_one);
+  color: var(--primary_color);
+  border: 2px solid var(--primary_color);
+  transition: 0.4s all;
+}
+/* ========================== bottom to top scroll end ============================ */
+
+/* 
+======================== ***** ============================= 
+    Template Name: Mydevfolio - One Page Portfolio Template
+	  Template URI: https://www.designtocodes.com/product/mydevfolio-one-page-portfolio-template/
+	  Description: Mydevfolio is a One Page Bootstrap template built with a modern design and the latest web technologies.
+	  Version: 1.0.1
+	  Author: DesignToCodes
+	  Author URI: https://www.designtocodes.com
+	  Text Domain: mydevfolio
+*/

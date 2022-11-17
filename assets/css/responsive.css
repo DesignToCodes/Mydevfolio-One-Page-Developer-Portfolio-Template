@@ -1,0 +1,149 @@
+/* 
+    ======================== ***** ============================= 
+      Template Name: Mydevfolio - One Page Portfolio Template
+	  Template URI: https://www.designtocodes.com/product/mydevfolio-one-page-portfolio-template/
+	  Description: Mydevfolio is a One Page Bootstrap template built with a modern design and the latest web technologies.
+	  Version: 1.0.1
+	  Author: DesignToCodes
+	  Author URI: https://www.designtocodes.com
+	  Text Domain: mydevfolio
+*/
+
+/* small phone responsive css */
+@media only screen and (min-width:0px) and (max-width:767px) {
+	[class *="col-"]{
+	  padding: 15px;
+	}
+	section{
+		padding: 50px 0px;
+	}
+	.d2c_title_invert {
+	    margin-bottom: 0px;
+	}
+	.d2c_title_invert span {
+	    font-size: 3em;
+	}
+	.d2c_image_bg_1,
+	.d2c_image_bg_2{
+		display: none;
+	}
+
+	/*navbar*/
+	.navbar .d2c_btn {
+	    margin-left: 0px;
+	    margin-top: 10px;
+	}
+
+	/*Home*/
+	.d2c_home {
+	    padding: 40px 0px;
+	}
+	p{
+		font-size: 14px;
+	}
+
+	/*counter*/
+	.d2c_counter_wrapper {
+	    border-right: none;
+	}
+
+	/*Contact*/
+	.d2c_contact{
+		padding: 25px 0px 50px; 
+	}
+}
+
+/* Tab responsive css */
+@media only screen and (min-width:768px) and (max-width:991px) {
+	[class *="col-"]{
+	  padding: 15px;
+	}
+	section{
+		padding: 70px 0px;
+	}
+	.d2c_title_invert {
+	    margin-bottom: 0px;
+	}
+	.d2c_title_invert span {
+	    font-size: 3.7em;
+	}
+	.d2c_image_bg_1,
+	.d2c_image_bg_2{
+		display: none;
+	}
+
+	/*Home*/
+	.d2c_home {
+	    padding: 40px 0px;
+	}
+
+	.d2c_about{
+		padding: 35px 0px 70px;
+	}
+
+	/*Contact*/
+	.d2c_contact img {
+	    height: 58vh;
+	}
+
+	/*counter*/
+	.d2c_counter_wrapper {
+	    border-right: none;
+	}
+
+	/*Contact*/
+	.d2c_contact {
+	    padding: 35px 0px 70px;
+	}
+
+	/*Footer*/
+	.d2c_main_footer {
+	    padding: 35px 0px 20px;
+	}
+	.d2c_footer_item img {
+	    max-width: 110px;
+	}
+	.d2c_footer_item .d2c_btn {
+	    padding: 0px 16px;
+	    font-size: 16px;
+	}
+	.d2c_footer .form-control {
+	    padding: 6px 0px 6px 9px;
+	    font-size: 16px;
+	}
+	.d2c_footer p{
+		font-size: 14px;
+	}
+	.list-group .list-group-item {
+	    font-size: 14px;
+	}
+}
+
+/* small laptop responsive css */
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	:is(.d2c_service, .d2c_portfolio, .d2c_skills, .d2c_Testimonial){
+		padding: 40px 0px 100px;
+	}
+
+	/*Contact*/
+	.d2c_contact img {
+	    height: 82vh;
+	}
+}
+
+
+@media only screen and (min-width:1200px){
+	:is(.d2c_service, .d2c_portfolio, .d2c_skills, .d2c_Testimonial){
+		padding: 40px 0px 100px;
+	}
+}
+/* 
+======================== ***** ============================= 
+      Template Name: Mydevfolio - One Page Portfolio Template
+	  Template URI: https://www.designtocodes.com/product/mydevfolio-one-page-portfolio-template/
+	  Description: Mydevfolio is a One Page Bootstrap template built with a modern design and the latest web technologies.
+	  Version: 1.0.1
+	  Author: DesignToCodes
+	  Author URI: https://www.designtocodes.com
+	  Text Domain: mydevfolio
+*/
