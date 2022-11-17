@@ -1,17 +1,22 @@
-<h1 align="center">  Mydevfolio - One Page Developer Portfolio Template </h1>
+<h1 align="center"> Danslamer - Travel Agency Bootstrap Template </h1>
 <p> 
-Mydevfolio is a One Page Bootstrap template built with a modern design and the latest web technologies. If you are looking for the best portfolio theme for your projects, Mydevfolio is the perfect option. With a modern design and a huge variety of elements, this template is ideal for any portfolio ‘ to showcase their work. It is fully responsive, making every element look flawless on all screens – mobile and desktops. Template codes are w3 validated and developer-friendly for easy customization </p>
+Danslamer is a fully responsive travel agency bootstrap template based on the most popular technologies like HTML5, CSS3, Bootstrap, FontAwesome, jQuery, and more which makes it load fast and SEO friendly. It is fully compatible with all devices: desktop computers, laptops, tablets, and phones. It is designed to be a top-notch multi-purpose template. Danslamer boasts simple yet rich styling, which proves ideal for travel and transport businesses. Responsive and retina friendly, it looks great on both desktop and mobile devices.
+</p>
 
-<span > [Live Preview](https://www.designtocodes.com/live-preview/mydevfolio-one-page-portfolio-template/) | [Download Template](https://www.designtocodes.com/product/mydevfolio-one-page-portfolio-template/) </span>
+<span > [Live Preview](https://www.designtocodes.com/live-preview/danslamer-travel-agency-bootstrap-template/) | [Download Template](https://www.designtocodes.com/product/danslamer-travel-agency-bootstrap-template/) </span>
 
-<img src="https://www.designtocodes.com/wp-content/uploads/2022/11/Mydevfolio_One_Page_Portfolio_Template.jpg" alt="Mydevfolio - One Page Developer Portfolio Template Thumbnail" />
+<img src="https://www.designtocodes.com/wp-content/uploads/2022/06/Danslamer_Travel_Agency_Bootstrap_Template_Thumbnail.jpg" alt="Danslamer - Travel Agency Bootstrap Template Thumbnail" />
 <br>
 <h3>  Version Details : </h3>
 <ul>
- 	<li> <b> Version 1.0.1 (2022-10-3) </b> <br>
--Gallery section image title fixed <br>
--Reduce the logo size in footer <br>
--Footer spacing fixed</li>
+ 	<li> <b> Version 1.0.1 (2022-08-3) </b> <br>
+-Gallery section image title fixed
+-Breadcrumbs fixed
+-Title animation added
+-404 Font weight changed
+
+
+</li>
 </ul>
 
 <hr>
